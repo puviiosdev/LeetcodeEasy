@@ -35,7 +35,7 @@ class Solution {
     }
 }
 
-//hashmap solution
+// Hashmap solution
 
 class Solution2 {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
