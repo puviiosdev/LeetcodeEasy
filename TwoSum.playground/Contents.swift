@@ -35,6 +35,26 @@ class Solution {
     }
 }
 
+//hashmap solution
 
-var obj = Solution()
+class Solution2 {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        var map = [Int: Int]() // Map to store (element, index)
+        
+        for i in 0..<nums.count {
+            let complement = target - nums[i]
+            if let complementIndex = map[complement] {
+                return [complementIndex, i]
+            }
+            map[nums[i]] = i
+        }
+        
+        return [] // No solution found
+    }
+}
+
+
+
+
+var obj = Solution2()
 print(obj.twoSum([2,7,11,15], 9))
